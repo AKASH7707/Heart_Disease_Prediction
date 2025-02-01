@@ -69,7 +69,7 @@ my_project/
 
    - After running the Flask app, open a web browser and go to http://localhost:5000.
    - Enter the relevant input values.
-   - Click on the "Predict" button to view your estimated probability of admission.
+   - Click on the "Predict" button to find the person have heart disease or not and.
 
 ---
 
@@ -78,9 +78,3 @@ my_project/
 This project uses a Logistic Regression machine learning model trained to estimate heart disease present or not. The model was developed using scikit-learn and saved as heart_disease_model.pkl.
 
 --- 
-
-## 7. License
-
-This project is licensed under the **MIT License**. See LICENSE for more information.
-
----
