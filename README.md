@@ -67,7 +67,7 @@ my_project/
 
 ## 5. Usage
 
-   - After running the Flask app, open a web browser and go to http://localhost:5000.
+   - After running the Flask app, open a web browser and go to 'localhost:5000'.
    - Enter the relevant input values.
    - Click on the "Predict" button to find the person have heart disease or not and.
 
