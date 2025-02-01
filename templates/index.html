@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Heart Disease Prediction</h1>
+            <img src="{{ url_for('static', filename='heart.jpg') }}" alt="university" class="university">
+        </div>
+        <form action="/predict" method="post">
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <input type="number" id="sex" name="sex" step="1" min="0" max="1" placeholder="0(feamale) or 1(male)" value="{{ request.form.sex }}" required>
+            </div>
+            <div class="form-group">
+                <label for="chest_pain_type">Chest pain type:</label>
+                <input type="number" id="chest_pain_type" name="chest_pain_type" step="1" min="1" max="4" placeholder="1 - 4" value="{{ request.form.chest_pain_type }}">
+                <small class="note">Note: 4 types of chest pain they are angina, Atypical angina, Non-anginal pain, Asymptomatic pain </small>
+            </div>
+            <div class="form-group">
+                <label for="exercise_angina">Exercise angina:</label>
+                <input type="number" id="exercise_angina" name="exercise_angina" step="1" min="0" max="1" placeholder="no(0) or yes(1)" value="{{ request.form.exercise_angina }}" required>
+                <small class="note">Note: Exercise angina is chest pain or discomfort that occurs during physical activity </small>
+            </div>
+            <div class="form-group">
+                <label for="slope_of_st">Slope of ST:</label>
+                <input type="number" id="slope_of_st" name="slope_of_st" step="1" min="0" max="2" placeholder="0 - 2" value="{{ request.form.slope_of_st }}" required>
+                <small class="note">Note: (Value 0: upsloping, Value 1: flat, Value 2: downsloping) </small>
+            </div>
+            <div class="form-group">
+                <label for="vessels_fluro">Number of vessels fluro:</label>
+                <input type="number" id="vessels_fluro" name="vessels_fluro" step="1" min="0" max="3" placeholder="0 - 3" value="{{ request.form.vessels_fluro }}" required>
+                <small class="note">Note:  Number of major vessels colored by fluoroscopy</small>
+            </div>
+            <div class="form-group">
+                <label for="thallium">Thallium:</label>
+                <input type="number" id="thallium" name="thallium" step="1" min="0" max="2" placeholder="0 - 2" value="{{ request.form.thallium }}" required>
+                <small class="note">Note: heart.value 0 = normal, value 1 = reversible defect and value 2 = fixed defect  </small>
+            </div>
+
+
+            <button type="submit" class="submit-button">Predict</button>
+        </form>
+        <div class="prediction">
+            <h2>{{ prediction_text }}</h2>
+        </div>
+        <form action="/" method="get">
+            <button type="submit" class="clear-button">Clear</button>
+        </form>
+    </div>
+    <script src="{{url_for('static', filename='script.js')}}"></script>
+    <footer class="footer">
+        <p>AKASH V S</p>
+        <a href="mailto:your-akashvs7707@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://github.com/AKASH7707/Heart_Disease_Prediction" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </footer>
+</body>
+</html>
