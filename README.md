@@ -1,4 +1,5 @@
 # Heart_Disease_Prediction
+![Heart Disease Prediction](https://github.com/user-attachments/assets/cbdaedd2-eca6-4fc1-a438-2899d99d61c6)
 
 ## 1. Introduction
 
