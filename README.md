@@ -17,7 +17,18 @@ The leading cause of death in the developed world is heart disease. Therefore th
 ### 1.3 Importance of the Project
 
 This project will help doctors to make sure whether the patient have heart disease or not.It can play a crucile role in saving people life.
+### 1.4 Models Used
 
+The following machine learning models were tested:
+Logistic Regression (Final Model)
+K-Nearest Neighbors (KNN)
+Decision Tree
+Random Forest
+Support Vector Classifier (SVC)
+Gaussian Naïve Bayes (GaussianNB)
+Gradient Boosting
+AdaBoost
+After evaluation, Logistic Regression was selected as the final model due to its performance and interpretability.
 ---
 ## 2. Project Structure
 
