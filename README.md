@@ -7,11 +7,11 @@ The dataset is taken from kaggle "https://www.kaggle.com/datasets/rishidamarla/h
 
 ### 1.1 Problem Statement
 
-The leading cause of death in the developed world is heart disease. Therefore there needs to be work done to help prevent the risks of of having a heart attack or stroke.Use this dataset to predict which patients are most likely to suffer from a heart disease in the near future using the features given.
+The leading cause of death in the developed world is heart disease. Therefore there needs to be work done to help prevent the risks of of having a heart attack or stroke.So we need some efficient way to predict which patients are most likely to suffer from a heart disease in the near future ,we have datas of patients about their medical condition for heart disease so with this data find a way to predict heart disase. It will help doctors to treat patients effectiely.
 
 ### 1.2 Goals and Objectives
 
-- The goal here is to creata a machine learning model to find the heart disease based on the datas given.
+- The goal here is to create a machine learning model to find the heart disease based on the datas given.
 - Then deploy the model in a website for easier access for the users.
 
 ### 1.3 Importance of the Project
