@@ -20,14 +20,9 @@ This project will help doctors to make sure whether the patient have heart disea
 ### 1.4 Model used
 
 The following machine learning models were tested:
-Logistic Regression (Final Model)
-K-Nearest Neighbors (KNN)
-Decision Tree
-Random Forest
-Support Vector Classifier (SVC)
-Gaussian Naïve Bayes (GaussianNB)
-Gradient Boosting
-AdaBoost
+Logistic Regression (Final Model), K-Nearest Neighbors (KNN), Decision Tree, Random Forest, Support Vector Classifier (SVC), Gaussian Naïve Bayes (GaussianNB), Gradient Boosting and AdaBoost.
+
+
 After evaluation, Logistic Regression was selected as the final model due to its performance and interpretability.
 
 ---
