@@ -16,7 +16,7 @@ The leading cause of death in the developed world is heart disease. Therefore th
 
 ### 1.3 Importance of the Project
 
-This project will help doctors to make sure whether the patient have heart disease or not.It can play a crucile role in saving people life.
+This project will help doctors to make sure whether the patient have heart disease or not.It can play a critical role in saving people life.
 ### 1.4 Model used
 
 The following machine learning models were tested:
